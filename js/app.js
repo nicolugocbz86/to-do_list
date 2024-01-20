@@ -31,10 +31,11 @@ addTaskButton.addEventListener('click', () => {
 
         let liTask = document.createElement('li');
         liTask.appendChild(pTask);
-        liTask.appendChild(div)
+        liTask.appendChild(div);
         liTask.classList.add('task');
         tasksContainer.appendChild(liTask);
+
     } else {
-        alert('Debes poner el nombre de la tarea')
+        alert('Debes poner el nombre de la tarea');
     }
 })
