@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/411f918983.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Lista de Tareas</title>
+</head>
+<body class="body">
+    <header class="header">
+        <h1>Lista de Tareas</h1>
+    </header>
+    <main class="main">
+        <form class="form">
+            <h2>Agrega una tarea</h2>
+            <div class="input-button-container">
+                <input type="text" name="task" id="task">
+                <button type="button">Agregar Tarea</button>
+            </div>
+        </form>
+        <div id="tasks-list-container" class="tasks-list-container">
+            <h2>Lista de Tareas</h2>
+            <ul class="tasks-container">
+                <li class="task">
+                    Lista de Tareas Vacia
+                </li>
+                <li class="task">
+                    <p>Tarea1</p>
+                    <div class="icons-container">
+                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </li>
+                <li class="task">
+                    <p>Tarea2</p>
+                    <div class="icons-container">
+                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
