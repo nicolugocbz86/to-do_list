@@ -28,6 +28,10 @@
                 flex-direction: column;
             }
 
+            li {
+                list-style-type: none;
+            }
+
         /* CLASS */
 
             .header,
@@ -66,7 +70,7 @@
                 border-top-right-radius: inherit;
                 border-top-left-radius: inherit;
                 border-bottom: .1rem solid hsl( 0, 0%, 0%);
-                background-color: aqua;
+                background-color: hsl( 0, 50%, 50%);
                 padding: .6rem;
                 gap: .6rem;
             }
@@ -97,10 +101,17 @@
             }
 
             .task {
-                border: .1rem solid black;
+                transition: .5s;
+                border-radius: .4rem;
+                border: .1rem solid hsl( 0, 0%, 0%);
                 justify-content: space-between;
                 padding: .4rem;
                 gap: .4rem;
+            }
+
+            .completed-task {
+                transition: .5s;
+                background-color: hsl(120, 100%, 80%);
             }
 
             .icons-container {
@@ -111,6 +122,14 @@
             .icons-container i {
                 cursor: pointer;
                 align-self: center;
+            }
+
+            .fa-check {
+                color: hsl(120, 100%, 20%);
+            }
+
+            .fa-trash-can {
+                color: hsl(0, 100%, 50%);
             }
 
         /* ID */

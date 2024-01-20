@@ -17,29 +17,15 @@
         <form class="form">
             <h2>Agrega una tarea</h2>
             <div class="input-button-container">
-                <input type="text" name="task" id="task">
-                <button type="button">Agregar Tarea</button>
+                <input type="text" name="task" id="newTask">
+                <button id="add-task-button" type="button">Agregar Tarea</button>
             </div>
         </form>
         <div id="tasks-list-container" class="tasks-list-container">
             <h2>Lista de Tareas</h2>
-            <ul class="tasks-container">
-                <li class="task">
+            <ul id="tasks-container" class="tasks-container">
+                <li id="empty-list-li" class="task">
                     Lista de Tareas Vacia
-                </li>
-                <li class="task">
-                    <p>Tarea1</p>
-                    <div class="icons-container">
-                        <i class="fa-solid fa-check"></i>
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
-                </li>
-                <li class="task">
-                    <p>Tarea2</p>
-                    <div class="icons-container">
-                        <i class="fa-solid fa-check"></i>
-                        <i class="fa-solid fa-trash-can"></i>
-                    </div>
                 </li>
             </ul>
         </div>
